@@ -1,0 +1,57 @@
+/* Fixed height so rotating cards never shift the rest of the column. */
+.MMM-Glance .glance { max-width: 100%; text-align: left; font-size: 16px; line-height: 1.3; color: #eee; }
+.MMM-Glance .gl-header { display: flex; justify-content: space-between; align-items: baseline; text-transform: uppercase; font-size: 15px; line-height: 15px; color: #999; border-bottom: 1px solid #666; padding-bottom: 5px; margin-bottom: 10px; }
+.MMM-Glance .gl-dots { display: flex; gap: 5px; }
+.MMM-Glance .gl-dot { width: 5px; height: 5px; border-radius: 50%; background: #444; }
+.MMM-Glance .gl-dot.gl-active { background: #bbb; }
+.MMM-Glance .gl-body { height: 150px; overflow: hidden; }
+.MMM-Glance .gl-label { font-size: 12px; color: #888; text-transform: uppercase; letter-spacing: 0.04em; }
+.MMM-Glance .gl-muted { font-size: 13px; color: #999; }
+.MMM-Glance .gl-right { margin-left: auto; }
+.MMM-Glance .gl-big { font-size: 52px; line-height: 1; font-weight: 300; color: #fff; font-variant-numeric: tabular-nums; }
+.MMM-Glance .gl-big-sm { font-size: 24px; line-height: 1.1; font-weight: 300; color: #fff; font-variant-numeric: tabular-nums; }
+
+/* Sky */
+.MMM-Glance .gl-sky-top { display: flex; justify-content: space-between; align-items: flex-end; }
+.MMM-Glance .gl-sun-times { display: flex; gap: 22px; }
+.MMM-Glance .gl-daylight { text-align: right; }
+.MMM-Glance .gl-arc { display: block; margin: 2px 0 4px; }
+.MMM-Glance .gl-arc-day { fill: none; stroke: #bbb; stroke-width: 1.4; }
+.MMM-Glance .gl-arc-night { fill: none; stroke: #3a3a3a; stroke-width: 1.2; }
+.MMM-Glance .gl-horizon { stroke: #555; stroke-width: 1; stroke-dasharray: 1.5 3; }
+.MMM-Glance .gl-sun { fill: #ffd479; }
+.MMM-Glance .gl-sun-down { fill: #666; }
+.MMM-Glance .gl-sky-row { display: flex; align-items: center; gap: 8px; font-size: 15px; }
+.MMM-Glance .gl-moon { flex: none; }
+.MMM-Glance .gl-moon-dark { fill: #2a2a2a; }
+.MMM-Glance .gl-moon-lit { fill: #ddd; }
+.MMM-Glance .gl-note { font-size: 13px; line-height: 17px; color: #999; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.MMM-Glance .gl-sky-row + .gl-note { margin-top: 6px; }
+
+/* Lake */
+.MMM-Glance .gl-lake-top { display: flex; justify-content: space-between; align-items: flex-start; }
+.MMM-Glance .gl-facts { display: grid; grid-template-columns: auto auto; column-gap: 12px; row-gap: 2px; align-items: baseline; font-size: 15px; padding-top: 4px; }
+.MMM-Glance .gl-fact { display: contents; }
+.MMM-Glance .gl-spark { display: block; margin-top: 6px; overflow: visible; }
+.MMM-Glance .gl-spark-line { fill: none; stroke: #7fb4d9; stroke-width: 1.4; stroke-linejoin: round; }
+.MMM-Glance .gl-spark-dot { fill: #7fb4d9; }
+.MMM-Glance .gl-grid { stroke: #333; stroke-width: 1; }
+.MMM-Glance .gl-spark-label { fill: #888; font-size: 11px; text-anchor: end; }
+.MMM-Glance .gl-spark-caption { fill: #666; font-size: 10px; text-transform: uppercase; letter-spacing: 0.06em; }
+
+/* Coming up */
+.MMM-Glance .gl-up-row { display: grid; grid-template-columns: 82px minmax(0, 1fr) auto; column-gap: 10px; align-items: baseline; padding: 2px 0; }
+.MMM-Glance .gl-up-newday { border-top: 1px solid #222; }
+.MMM-Glance .gl-up-day { font-size: 13px; color: #999; }
+.MMM-Glance .gl-up-title { font-size: 18px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.MMM-Glance .gl-up-detail { font-size: 13px; color: #999; white-space: nowrap; font-variant-numeric: tabular-nums; }
+
+/* Wine */
+.MMM-Glance .gl-wine { display: flex; gap: 16px; }
+.MMM-Glance .gl-bottle { flex: none; width: 56px; height: 150px; object-fit: contain; }
+.MMM-Glance .gl-wine-text { min-width: 0; flex: 1; display: flex; flex-direction: column; gap: 2px; }
+.MMM-Glance .gl-wine-name { font-size: 19px; line-height: 1.2; color: #fff; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.MMM-Glance .gl-wine-notes { font-size: 13px; color: #888; font-style: italic; }
+.MMM-Glance .gl-wine-foot { margin-top: auto; display: flex; align-items: baseline; gap: 10px; }
+.MMM-Glance .gl-wine-price { font-size: 22px; font-weight: 300; color: #fff; }
+.MMM-Glance .gl-wine-score { margin-left: auto; font-size: 15px; color: #d9b36c; }

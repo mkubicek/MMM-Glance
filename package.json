@@ -1,0 +1,44 @@
+{
+  "name": "mmm-glance",
+  "version": "1.0.0",
+  "description": "MagicMirror² card deck for Zurich: sun and moon, Zürichsee water temperature, Sonarr/Radarr coming up, optional wine of the day",
+  "main": "MMM-Glance.js",
+  "license": "MIT",
+  "author": "Milan Kubicek",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkubicek/MMM-Glance.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mkubicek/MMM-Glance/issues"
+  },
+  "homepage": "https://github.com/mkubicek/MMM-Glance#readme",
+  "keywords": [
+    "magicmirror",
+    "magicmirror-module",
+    "magicmirror2",
+    "sunrise",
+    "sunset",
+    "moon-phase",
+    "zurich",
+    "zuerichsee",
+    "sonarr",
+    "radarr"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "demo": "node demo/server.js"
+  },
+  "files": [
+    "MMM-Glance.js",
+    "MMM-Glance.css",
+    "glance.js",
+    "node_helper.js",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ]
+}
